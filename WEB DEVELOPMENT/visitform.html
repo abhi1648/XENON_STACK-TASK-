@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reservtion Form</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            
+        }
+        body{
+            background-color: white;
+        }
+        .menu a:hover {
+            color: rgb(243, 181, 9);
+
+        }
+
+        header {
+           
+            width: 100%;
+            height: 10vh;
+            background-color: black;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        nav {
+            position: sticky;
+            width: 100%;
+            height: 10vh;
+            background: rgba(0, 0, 0, 0.2);
+            color: white;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            text-transform: uppercase;
+        }
+
+
+        .logo {
+            display: flex;
+            width: 25%;
+            text-align: center;
+            justify-content: center;
+        }
+
+        nav .menu {
+            font-size: 100%;
+            text-align: center;
+            width: 65%;
+            display: flex;
+            justify-content: space-around;
+        }
+
+        nav .menu a {
+            width: auto;
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+        }
+        div.logo:hover {
+            color: rgb(243, 181, 9);
+
+        }
+
+
+        .box {
+
+            padding: 5vw;
+            padding-top: 10px;
+            padding-bottom: 10px;
+        }
+
+        h1 {
+            text-align: center;
+            background-color: black;
+            color: white;
+            height: 5vh;
+            padding: 10px;
+        }
+
+        form {
+            padding: 10px;
+            border: 5px solid black;
+            background-color: rgb(108, 179, 209);
+            color: rgb(7, 7, 7);
+            /* padding: 300px; */
+
+        }
+
+        label {
+            color: white;
+            background-color: rgb(108, 179, 209);
+        }
+
+        .box1 {
+            background-color: rgb(108, 179, 209);
+            
+        }
+        
+        .box1 input {
+            background-color:rgb(243, 243, 243) ;
+            width: 100%;
+            height: 4vh;
+        }
+
+        .box2 {
+            background-color: rgb(108, 179, 209);
+        }
+
+        
+        select {
+            width: 50%;
+            height: 3vh;
+        }
+
+        button {
+            padding: 10px;
+            width: 30%;
+            justify-content: center;
+            color: white;
+            background-color: green;
+        }
+
+        .box2 a {
+            background-color: rgb(108, 179, 209);
+        }
+
+
+        .condition {
+            background-color: rgb(108, 179, 209);
+        }
+
+        .submit { text-align: center;
+            display: block;
+            background-color: rgb(108, 179, 209);
+            
+        }
+
+        .submit button {
+            
+            color: black;
+            
+        }
+
+        .submit button:hover {
+            background-color: rgb(85, 232, 85);
+            color: rgb(251, 249, 248);
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <h1 style="font-size: 30px;"> Visit--India </h1>
+            </div>
+            <div class="menu">
+                <a href="logined.html">Home</a>
+                <a href="gallery.html">gallery</a>
+                <!-- <a href="#">about</a> -->
+                <a href="contact.html">contact</a>
+                <a href="index.html">Log Out</a>
+            </div>
+        </nav> </header>
+    <div class="box">
+        <h1>Reservation Form</h1>
+        <form>
+            <div class="box1">
+                <label>Full Name</label><br>
+                <input type="text" placeholder="First Name Last Name"><br><br>
+                <label>Email</label><br>
+                <input type="text" placeholder="xxxxxx@gmail.com"><br><br>
+                <label>Mobile</label><br>
+                <input type="number" placeholder="Mob_Num"><br><br>
+                <label>Destination</label><br>
+                <input type="text" placeholder="Enter your Destination"><br><br>
+                <label>Add more destinatiion (Optional)</label><br>
+                <input type="text" placeholder="destinatiion , destinatiion , destinatiion , ........."><br><br>
+                <label>Depature Date</label><br>
+                <input type="date" placeholder="d/m/Y"><br><br>
+                <label>Number of Person</label><br>
+                <select name="package">
+                    <option value="1">one</option>
+                    <option value="2">two</option>
+                    <option value="3">three</option>
+                    <option value="4">four</option>
+                    <option value="5">five</option>
+                    <option value="6">six</option>
+                    <option value="7">seven</option>
+                    <option value="8">Eight</option>
+                    <option value="9">nine</option>
+                    <option value="10">Ten</option>
+                </select>
+            </div><br>
+            <div class="box2">
+                <label>What would you want to avail?</label><br>
+                <input type="checkbox" id="scales" name="scales">
+                <label for="scales">Hotels</label> <br>
+                <input type="checkbox" id="horns" name="horns">
+                <label for="horns">Food</label><br><br>
+                <label>Duration Of Journey</label><br>
+                <input type="number" placeholder="Days"><br><br>
+                <a href="termcondition.html">Terms & Conditions</a><br>
+            </div>
+            <div class="condition">
+                <input type="checkbox" id="condition" name="condition" required>
+                <label for="check">I accept all terms and conditions.</label><br><br>
+                <div class="submit">
+                    <p><button type="submit" value="Confirm Reservation" style="padding: 10px;"><a href="subreserb.html" style="color: white;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Confirm Reservation&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a></button></p>
+                    <!-- <button type="submit" value="submit">Confirm Reservation</button> -->
+                </div>
+
+        </form>
+    </div>
+</body>
+
+</html>

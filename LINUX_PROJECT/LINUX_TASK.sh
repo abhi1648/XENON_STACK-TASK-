@@ -1,5 +1,4 @@
 #!/bin/bash
-
 # Function to display the manual page
 function display_manual() {
   echo "internsctl - Custom Linux Command"
@@ -18,7 +17,6 @@ function display_manual() {
   echo
   echo "For more details, use 'internsctl <command> --help'"
 }
-
 # Function to display help for specific commands
 function display_command_help() {
   case "$1" in
@@ -46,17 +44,14 @@ function display_command_help() {
       ;;
   esac
 }
-
 # Function to get CPU information
 function get_cpu_info() {
   lscpu
 }
-
 # Function to get memory information
 function get_memory_info() {
   free
 }
-
 # Function to create a new user
 function create_user() {
   if [ -z "$1" ]; then
@@ -66,7 +61,6 @@ function create_user() {
     sudo passwd "$1"
   fi
 }
-
 # Function to list users
 function list_users() {
   if [ "$1" == "--sudo-only" ]; then
@@ -75,7 +69,6 @@ function list_users() {
     getent passwd
   fi
 }
-
 # Function to get file information
 function get_file_info() {
   local file="$1"
@@ -105,7 +98,6 @@ function get_file_info() {
     esac
   fi
 }
-
 # Main script logic
 case "$1" in
   "--help")
@@ -138,4 +130,3 @@ case "$1" in
     echo "Invalid command. Use 'internsctl --help' for usage."
     ;;
 esac
-

@@ -32,8 +32,8 @@ The above command creates a new user who can log in to the Linux system and acce
 ### List Users
 `internsctl user list`
 
-###List all regular users.
-`internsctl user list --sudo-only`
+### List all regular users.
+ `internsctl user list --sudo-only`
 
 # File Information 
 
@@ -41,12 +41,14 @@ The above command creates a new user who can log in to the Linux system and acce
 `internsctl file getinfo <file-name>`
 
 ### Expected Output Format
-`File  : <LINUX_TASK>
-Access : -rw-r--r--
-Size(B): 5448
-Owner  : <Abhishek_Kumar_Singh>
-Modify : <13:01:23>`
 
+`File  : <LINUX_TASK> <br>`
+`Access : -rw-r--r--`
+`Size(B): 5448`
+`Owner  : <Abhishek_Kumar_Singh>`
+`Modify : <13:01:23>`
 
+### Author
+1- Abhishek Kumar Singh
 
 
